@@ -1,12 +1,13 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: chrisebongue
- * Date: 26/08/17
- * Time: 00:25
- */
-
-class User
-{
-
+class User {
+    protected $name;
+    public function getName() {
+        return $this->name;
+    }
+    public function setName($name) {
+        $this->name = $name;
+    }
+    public function talk() {
+        return "Hello world!";
+    }
 }
